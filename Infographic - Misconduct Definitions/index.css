@@ -1,0 +1,147 @@
+:root {
+  --primary: #00B274;
+  --primary-text: #404040;
+  --secondary-text: #FFFFFF;
+  --primary-bg: #FAFAFA;
+  --secondary-bg: #F2F2F2;
+}
+
+@font-face {
+  font-family: Knockout-HTF47;
+  src: url(./assets/Knockout-HTF47-Bantamweight.otf);
+}
+
+@font-face {
+  font-family: Knockout-HTF48;
+  src: url(./assets/Knockout-HTF48-Featherweight.otf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Knockout-HTF48', sans-serif;
+  color: var(--primary-text);
+}
+
+h1, h2, h3, p, span {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  background: var(--primary-bg);
+  /* padding: 0 28px; */
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 146px;
+  background: url(./assets/Asset\ 2-100.jpg) center center/101% no-repeat;  
+  object-fit: contain;
+  flex-direction: column;
+}
+
+.header-title {
+  color: var(--secondary-text);
+}
+
+.header-title.-larger {
+  font-size: 7rem;
+  line-height: .9em;
+}
+
+.header-title.-dashed {
+  font-size: 3rem;
+}
+
+.header-title.-dashed::before,
+.header-title.-dashed::after {
+  background: var(--secondary-text);
+}
+
+.-dashed {
+  font-size: 1.9rem;
+  line-height: 1em;
+  display: inline-flex;
+  position: relative;
+}
+
+.-dashed::before,
+.-dashed::after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 2px;
+  background: var(--primary-text);
+  position: absolute;
+  top: 50%;
+}
+
+.-dashed::before {
+  left: -15px;
+}
+
+.-dashed::after {
+  right: -15px;
+}
+
+.section-title-wrapper {
+  height: 64px;
+  background: var(--primary);
+}
+
+.section-title {
+  font-family: 'Knockout-HTF47';
+  font-size: 4.2rem;
+  color: var(--secondary-text);
+  display: inline-flex;
+  position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+  content: '';
+  display: block;
+  width: 15.5px;
+  height: 14.7px;
+  background: url(./assets/Asset\ 3.svg) center center/cover no-repeat;
+  position: absolute;
+  top: 35%;
+}
+
+.section-title::before {
+  left: -25px;
+}
+
+.section-title::after {
+  right: -25px;
+}
+
+.title {
+  font-size: 3.7rem;
+  line-height: 1em;
+}
+
+.-larger {
+  font-size: 6.3rem;
+  line-height: .9em;
+}
+
+.title-wrapper {
+  padding: 25px 0;
+}
