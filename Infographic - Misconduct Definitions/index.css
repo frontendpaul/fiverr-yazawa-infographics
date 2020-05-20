@@ -27,23 +27,23 @@ html {
 body {
   margin: 0;
   font-family: 'Knockout-HTF48', sans-serif;
-  color: var(--primary-text);
   background-color: var(--secondary-bg);
 }
 
-h1, h2, h3, p, span {
+p {
   margin: 0;
   font-weight: 400;
   letter-spacing: .01em;
   text-transform: uppercase;
   text-align: center;
+  color: var(--primary-text);
 }
 
 .container {
   background: var(--primary-bg);
   /* padding: 0 28px; */
   width: 100%;
-  max-width: 350px;
+  max-width: 320px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -54,6 +54,46 @@ h1, h2, h3, p, span {
   align-items: center;
   position: relative;
 }
+
+.title-wrapper {
+  padding: 25px 0;
+}
+
+.fs1, .fs2, .fs3, .fs4, .fs5, .fs6, .fs7, .fs8, .fs9, .fs10, .fs11 {
+  line-height: 1em;
+}
+
+.fs1 {
+  font-size: 3.7rem;
+}
+.fs2 {
+  font-size: 1.9rem;
+}
+.fs3 {
+  font-size: 6.3rem;
+}
+.fs4 {
+  font-size: 2.2rem;
+}
+.fs5 {
+  font-size: 2.5rem;
+}
+.fs6 {
+  font-size: 4.4rem;
+}
+.fs7 {
+  font-size: 3.1rem;
+}
+.fs8 {
+  font-size: 4.8rem;
+}
+.fs9 {
+  font-size: 3.7rem;
+}
+.fs10 {
+  font-size: 3.7rem;
+}
+
 
 .header {
   height: 146px;
@@ -82,8 +122,6 @@ h1, h2, h3, p, span {
 }
 
 .-dashed {
-  font-size: 1.9rem;
-  line-height: 1em;
   display: inline-flex;
   position: relative;
 }
@@ -139,23 +177,8 @@ h1, h2, h3, p, span {
   right: -25px;
 }
 
-.title {
-  font-size: 3.7rem;
-  line-height: 1em;
-}
-
-.-larger {
-  font-size: 6.3rem;
-  line-height: .9em;
-}
-
-.title-wrapper {
-  padding: 25px 0;
-}
-
-.separator {
+.separator-text {
   display: inline-flex;
-  color: var(--primary);
   background: var(--primary-bg);
   padding: 0 10px;
   position: relative;
@@ -163,15 +186,20 @@ h1, h2, h3, p, span {
 }
 
 .separator-bg {
-  width: calc(100% - 40px);
+  width: 280px;
+  position: absolute;
+  left: 20px;
+}
+
+.double-line-text {
+  color: var(--primary);
+}
+
+.double-line {
   height: 10px;
-  margin: 0 20px;
+  top: 30%;
   border-top: 2px solid var(--primary);
   border-bottom: 2px solid var(--primary);
-  position: absolute;
-  top: 30%;
-  left: 0;
-  z-index: 1;
 }
 
 .cards {
@@ -193,52 +221,22 @@ h1, h2, h3, p, span {
   margin: 0 auto 17px;
 }
 
-.icon-title {
-  font-size: 2.2rem;
-}
-
 .icon-title.small {
   width: 100px;
   margin: 0 auto;
 }
 
-.or {
-  display: inline-flex;
-  font-size: 1.9rem;
-  background: var(--primary-bg);
-  padding: 0 10px;
-  position: relative;
-  z-index: 2;
-}
-
-.or-bg {  
-  margin: 0 20px;
-  width: calc(100% - 40px);
+.or-bg {
   height: 2px;
   background: var(--primary-text);
-  position: absolute;
   top: 50%;
-  left: 0;
-}
-
-.due {
-  display: inline-flex;
-  font-size: 2.5rem;
-  background: var(--primary-bg);
-  padding: 0 10px;
-  position: relative;
-  z-index: 2;
 }
 
 .due-bg {
-  margin: 0 20px;
-  width: calc(100% - 40px);
   height: 15px;
   border: 2px solid var(--primary-text);
   border-bottom: 0;
-  position: absolute;
   top: 45%;
-  left: 0;
 }
 
 .drags .card {
@@ -246,9 +244,96 @@ h1, h2, h3, p, span {
 }
 
 .ribbon {
-  /* width: 278px; */
-  width: calc(100%-40px);
-  height: 47px;
+  width: 280px;
+  height: 50px;
   background: url(./assets/Asset\ 9.svg) center center/cover no-repeat;
   margin-top: 40px;
+  position: relative;
+}
+
+.ribbon-title {
+  display: inline-flex;
+  color: var(--secondary-text);
+  position: relative;
+  top: -8px;
+  z-index: 2;
+  background: var(--primary);
+  padding: 0 10px;
+}
+
+.ribbon-bg {
+  width: 170px;
+  height: 2px;
+  background: var(--secondary-text);
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.raqtangle {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+}
+
+.raqtangle-bg {
+  width: 190px;
+  height: 32px;
+  border: 2px solid var(--primary);
+  left: 65px;
+  top: 25%
+}
+
+.raqtangle-big {
+  margin-bottom: -12px;
+}
+
+.raqtangle-big .separator-text {
+  padding-bottom: 5px;
+}
+.raqtangle-big .separator-text:nth-of-type(2) {
+  margin-top: -5px;
+}
+
+.raqtangle-big .raqtangle-bg {
+  height: 45px;
+}
+
+.raqtangle-wide .raqtangle-bg {
+  width: 220px;
+  left: 50px;
+}
+
+.arrows {
+  width: 220px;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  width: 6px;
+  height: 100%;
+  background: url(./assets/Asset\ 10.svg) center bottom/100% no-repeat;
+  position: relative;
+  top: -12px;
+}
+
+.arrow1 {
+  height: 50%;
+}
+
+.arrow2 {
+  height: 66.6666%;
+}
+
+.arrow3 {
+  height:83.3333%;
+}
+
+.raqtangle-large .raqtangle-bg {
+  width: 260px;
+  height: 50px;
+  left: 30px;
+  border-width: 3px;
 }
