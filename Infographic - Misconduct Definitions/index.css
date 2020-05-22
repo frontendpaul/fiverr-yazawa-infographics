@@ -59,8 +59,12 @@ p {
   padding: 25px 0;
 }
 
-.fs1, .fs2, .fs3, .fs4, .fs5, .fs6, .fs7, .fs8, .fs9, .fs10, .fs11, .fs12 {
+.fs1, .fs2, .fs3, .fs4, .fs5, .fs6, .fs7, .fs8, .fs9, .fs11 {
   line-height: 1em;
+}
+
+.fs10, .fs12, .fs13 {
+  line-height: 0.8;
 }
 
 .fs1 {
@@ -98,6 +102,9 @@ p {
 }
 .fs12 {
   font-size: 8.2rem;
+}
+.fs13 {
+  font-size: 9.6rem;
 }
 
 
@@ -352,13 +359,13 @@ p {
   top: 50%;
 }
 
-.title-raqtangle .fs9 {
-  line-height: 0.85;
+.separator-text.fs9 {
+  line-height: 0.8;
 }
 
 .sexual-battery .raqtangle-large .raqtangle-bg {
   height: 60px;
-  top: 20%;
+  top: 18%;
 }
 
 .sexual-coercion .raqtangle-large .raqtangle-bg {
@@ -368,10 +375,29 @@ p {
 }
 
 .fs10 {
-  line-height: 0.8;
   margin-top: 3px;
 }
 
-.fs12 {
-  line-height: 0.8;
+
+.gender-based-harassment .section-title::before {
+  left: -17px;
+}
+
+.gender-based-harassment .section-title::after {
+  right: -16px;
+}
+
+.including {
+  width: 180px;
+  left: 70px;
+}
+
+.gender-based-harassment .cards {
+  width: 220px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.and {
+  margin: 10px 0;
 }
